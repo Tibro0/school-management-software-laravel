@@ -22,7 +22,7 @@
                 </div>
                 </div>
                 <div class="table-responsive">
-                    <table class="table mb-0">
+                    <table class="table mb-0" id="example2">
                         <thead class="table-light">
                             <tr>
                                 <th>#Sl</th>
@@ -58,6 +58,7 @@
 
 @section('js')
 <script src="{{ asset('backend/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
+<script src="{{ asset('backend/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
 <script>
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
